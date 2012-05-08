@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block title %} Objects {% endblock %}
+{% block body %}
+    {% if g.user %}
+        <p class="user_welcome">Hello {{ g.user.name }}!</p>
+    {% endif %}
+    
+    <h2>Objects</h2>
+    
+    {% if objects %}
+        <table>
+        {% for object in objects %}
+            <tr>
+                <td>{{ object.id }} | {{ object.name }} | {{ "({0:.5f}, {1:.5f})".format(object.ra, object.dec) }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    {% endif %}
+
+{% endblock %}

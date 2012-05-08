@@ -1,0 +1,71 @@
+body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    margin: 30px;
+    padding: 0;
+}
+
+a {
+    color: #335E79;
+}
+
+p.message {
+    color: #19567D;
+    padding: 10px;
+    background: #D3E7F5;
+    
+    -moz-box-shadow: 0px 2px 5px #888;
+    -webkit-box-shadow: 0px 2px 5px #888;
+    box-shadow: 0px 2px 5px #888;
+}
+
+p.error {
+    color: #7A1C1C;
+    padding: 10px;
+    background: #FFBFBF;
+    
+    -moz-box-shadow: 0px 2px 5px #888;
+    -webkit-box-shadow: 0px 2px 5px #888;
+    box-shadow: 0px 2px 5px #888;
+}
+
+input {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    border: 1px solid black;
+    color: #335E79;
+    padding: 2px;
+}
+
+input[type="submit"] {
+    background: #CADEEB;
+    color: #335E79;
+    border-color: #335E79;
+}
+
+input[name="openid"] {
+    background: url(openid.png) 4px no-repeat;
+    padding-left: 24px;
+}
+
+.openid_logo {
+    border: 2px #000 solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 5px;
+    vertical-align:middle;
+}
+
+.openid_logo:hover {
+    border: 2px #0000ff solid;
+    cursor: pointer;
+    
+    -moz-box-shadow: -2px 2px 5px #888;
+    -webkit-box-shadow: -2px 2px 5px #888;
+    box-shadow: -2px 2px 5px #888;
+}
+
+
+h1, h2 {
+    font-weight: normal;
+}
